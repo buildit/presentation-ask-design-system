@@ -1,3 +1,7 @@
+# Build nyc_output
+dist/
+
+
 # Logs
 logs
 *.log
