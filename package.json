@@ -1,0 +1,32 @@
+{
+  "name": "presentation-ask-design-system",
+  "version": "0.1.0",
+  "description": "\"Ask not what your Design System can do for you...\" presentation",
+  "main": "dist/index.html",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buildit/presentation-ask-design-system.git"
+  },
+  "keywords": [
+    "presentation",
+    "slides",
+    "deck",
+    "design-systems",
+    "reveal-js",
+    "conference"
+  ],
+  "contributors": [
+    "Marcos Peebles (https://twitter.com/MarcosPeebles)",
+    "Matteo Pescarin (http://peach.smartart.it/)",
+    "James Nash (http://cirrus.twiddles.com/)"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/buildit/presentation-ask-design-system/issues"
+  },
+  "homepage": "https://github.com/buildit/presentation-ask-design-system#readme"
+}
