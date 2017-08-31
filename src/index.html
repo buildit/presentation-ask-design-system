@@ -12,7 +12,8 @@
     <div class="reveal">
       <div class="slides">
 
-        <!-- Intro -->
+        <!-- Cover -->
+
         <section>
           <hgroup>
             <h1>Ask not what your Design System can do for you...</h1>
@@ -20,59 +21,103 @@
           </hgroup>
         </section>
 
-        <section>
-          We are Marcos &amp; James ....
 
-          Over the next half hour or so, we hope to approach the challenge posed by our talk's title.
-        </section>
+        <!-- Intro section -->
 
         <section>
-          Actually, before we get into that. How many of you have heard of "design systems"...
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            We are Marcos &amp; James ....
+
+            Over the next half hour or so, we hope to approach the challenge posed by our talk's title.
+          </aside>
         </section>
+
 
         <section>
-          Before we tackle what design systems can do for us and we for them, <strong>we need understand where they have come from</strong>...
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            Actually, before we get into that. How many of you have heard of "design systems"...
+          </aside>
         </section>
 
+
+        <section>
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            Before we tackle what design systems can do for us and we for them, <strong>we need understand where they have come from</strong>...
+          </aside>
+        </section>
 
 
         <!-- ~10 examples of pain points across different personas -->
+
         <section>
-          Don't you just hate it when you're the developer and...
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            Don't you just hate it when you're the developer and...
+          </aside>
         </section>
+
+
         <section>
-          Don't you just hate it when you're the designer and...
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            Don't you just hate it when you're the designer and...
+          </aside>
         </section>
+
+
         <section>
-          Don't you just hate it when you're the project manager and...
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            Don't you just hate it when you're the project manager and...
+          </aside>
         </section>
+
+
         <section>
-          Don't you just hate it when you're the client and...
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            Don't you just hate it when you're the client and...
+          </aside>
         </section>
+
 
         <!-- What have done about this? -->
+
         <section>
-          Evolution:
+          <!-- Visible slide content goes here -->
 
-          Static, full-page design & build
+          <aside class="notes">
+            Evolution:
 
-          --> Modular builds + styleguide docs
+            Static, full-page design + build
 
-          --> Template languages (PHP -> Mustache -> React...)
+            --> Modular builds + styleguide docs
 
-          --> Styleguide websites (aka pattern libraries)
+            --> Template languages (PHP -> Mustache -> React...)
 
-          --> UI libraries
+            --> Styleguide websites (aka pattern libraries)
 
-          Also: Key milestones: Separation of concerns, mobile first, progressive enhancement...
+            --> UI libraries
+
+            Also: Key milestones: Separation of concerns, mobile first, progressive enhancement...
 
 
-          At each step of the way:
-            1) Sub-optimal way of doing things
-            2) Better way is established
-            3) Better way introduces new questions &amp; challenges
-            4) GOTO: 1)
-
+            At each step of the way:
+              1) Sub-optimal way of doing things
+              2) Better way is established
+              3) Better way introduces new questions &amp; challenges
+              4) GOTO: 1)
+          </aside>
         </section>
 
         <!-- towards the end... -->
@@ -82,14 +127,23 @@
             <br>
             &mdash; ask what you can do for your design system.
           </blockquote>
+
+          <aside class="notes">
+          </aside>
         </section>
 
       </div>
     </div>
 
+    <script src="./reveal/lib/js/head.min.js"></script>
     <script src="./reveal/js/reveal.js"></script>
     <script>
-			Reveal.initialize();
+      Reveal.initialize({
+        dependencies: [
+          // Speaker notes
+		      { src: './reveal/plugin/notes/notes.js', async: true }
+        ]
+      });
 		</script>
   </body>
 </html>
