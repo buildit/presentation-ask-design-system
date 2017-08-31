@@ -5,6 +5,7 @@
   "main": "dist/index.html",
   "private": true,
   "scripts": {
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
