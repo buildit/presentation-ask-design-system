@@ -65,6 +65,12 @@ function sassTask(){
 };
 
 
+function reloadTask(done){
+  browserSync.reload();
+  done();
+}
+
+
 // Watch
 function watchTask(){
   gulp.watch(
@@ -76,7 +82,7 @@ function watchTask(){
   gulp.watch(
     paths.htmlFile,
     { awaitWriteFinish: true },
-    gulp.series(htmlTask, browserSync.reload)
+    gulp.series(htmlTask, reloadTask)
   )
 };
 
