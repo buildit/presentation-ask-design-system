@@ -2,6 +2,8 @@ const path = require('path');
 const gulp = require('gulp');
 const del = require('del');
 const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
+
 
 function absPath(relativePath){
   return path.resolve(__dirname, relativePath);
@@ -9,10 +11,12 @@ function absPath(relativePath){
 
 const paths = {
   dist: absPath('dist/'),
+  htmlFile: absPath('src/index.html'),
   reveal: {
     base: absPath('node_modules/reveal.js/')
   },
   sass: {
+    srcGlob: absPath('src/sass/**/*.scss'),
     src: absPath('src/sass/style.scss')
   }
 }
@@ -25,20 +29,20 @@ paths.reveal.sassThemeBase = path.resolve(paths.reveal.base, 'css/theme/')
 
 
 // Nuke build dir
-gulp.task('clean', function(){
+function cleanTask(){
   return del(path.resolve(paths.dist, '**/*'));
-});
+};
 
 
 
 // Copy HTML to output
-gulp.task('html', function(){
-  return gulp.src(absPath('src/index.html'))
+function htmlTask(){
+  return gulp.src(paths.htmlFile)
     .pipe(gulp.dest(paths.dist));
-});
+};
 
 // Copy Reveal.js stuff output
-gulp.task('reveal', function(){
+function revealTask(){
   return gulp.src([
     paths.reveal.cssFile,
     paths.reveal.jsGlob,
@@ -48,16 +52,50 @@ gulp.task('reveal', function(){
     base: paths.reveal.base,
   })
     .pipe(gulp.dest(path.resolve(paths.dist, 'reveal/')));
-});
+};
 
 // Compile SASS
-gulp.task('sass', function(){
+function sassTask(){
   return gulp.src(paths.sass.src)
     .pipe(sass({
       includePaths: [paths.reveal.sassThemeBase]
     }))
-    .pipe(gulp.dest(paths.dist));
-});
+    .pipe(gulp.dest(paths.dist))
+    .pipe(browserSync.stream());
+};
 
 
-gulp.task('default', gulp.series('clean', gulp.parallel('html', 'sass', 'reveal')));
+// Watch
+function watchTask(){
+  gulp.watch(
+    paths.sass.srcGlob,
+    { awaitWriteFinish: true },
+    sassTask
+  );
+
+  gulp.watch(
+    paths.htmlFile,
+    { awaitWriteFinish: true },
+    gulp.series(htmlTask, browserSync.reload)
+  )
+};
+
+
+
+// Serve build output via BrowserSync
+function serveTask(done){
+  browserSync.init({
+    server: {
+      baseDir: paths.dist
+    }
+  }, function(){
+    done();
+  });
+}
+
+
+
+gulp.task('default', gulp.series(cleanTask, gulp.parallel(htmlTask, sassTask, revealTask)));
+
+gulp.task('watch', gulp.series('default', watchTask));
+gulp.task('serve', gulp.series('default', serveTask, watchTask));
