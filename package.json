@@ -30,6 +30,7 @@
   },
   "homepage": "https://github.com/buildit/presentation-ask-design-system#readme",
   "devDependencies": {
+    "del": "^3.0.0",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-sass": "^3.1.0",
     "reveal.js": "^3.5.0"
