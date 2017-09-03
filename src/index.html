@@ -12,7 +12,7 @@
     <div class="reveal">
       <div class="slides">
 
-       <!-- Intro section -->
+       <!-- ======= Intro section ======= -->
 
         <section>
           <hgroup>
@@ -51,7 +51,7 @@
         </section>
 
 
-        <!-- ~10 examples of pain points across different personas -->
+        <!-- ======= ~10 examples of pain points across different personas ======= -->
 
         <section>
           <!-- Visible slide content goes here -->
@@ -76,8 +76,8 @@
             <p>You ask for a web font version of it.</p>
             <p>You are sent some TTF files.</p>
             <p>You explain that you need the <em>web</em> font versions of it.</p>
-            <p>Several emails later you are sent the same TTF files.</p>
-            <p>None of the TTF files you got are for the weight specified by the brand guidelines for heading text.</p>
+            <p>Several emails later you are sent the same TTF files again.</p>
+            <p>By the way, none of the TTF files you got are for the weight specified by the brand guidelines for heading text.</p>
           </aside>
         </section>
 
@@ -107,32 +107,154 @@
         </section>
 
 
-        <!-- What have done about this? -->
+
+        <!-- ======= What have done about this? ======= -->
+        <!--
+          Evolution:
+
+          Static, full-page design + build
+
+          -> Modular builds + styleguide docs
+
+          -> Template languages (PHP -> Mustache -> React...)
+
+          -> Styleguide websites (aka pattern libraries)
+
+          -> UI libraries
+
+          Also: Key milestones: Separation of concerns, mobile first, progressive enhancement...
+
+
+          At each step of the way:
+            1) Sub-optimal way of doing things
+            2) Better way is established
+            3) Better way introduces new questions &amp; challenges
+            4) GOTO: 1)
+
+        -->
 
         <section>
           <!-- Visible slide content goes here -->
 
           <aside class="notes">
-            Evolution:
-
-            Static, full-page design + build
-
-            --> Modular builds + styleguide docs
-
-            --> Template languages (PHP -> Mustache -> React...)
-
-            --> Styleguide websites (aka pattern libraries)
-
-            --> UI libraries
-
-            Also: Key milestones: Separation of concerns, mobile first, progressive enhancement...
+            <p>So what have done to counteract all this pain?</p>
+            <p>Well, we acknowledged the fact that our websites contained recurring elements: Headers, footers, links, buttons, etc.</p>
+            <p>On the dev side, ever more sophisticated templating languages allowed us to better write the markup for such elements once and re-use them many times over. Likewise, techniques and tools to better scale CSS to large and complex projects arose.</p>
+            <p>Correspondingly, designers began complementing their full-page mock-ups with styleguide documents. Their tooling improved too. Painstakingly hand-crafted PDF documents gave way to modular vector graphics synchronised and shared via online services.</p>
+          </aside>
+        </section>
 
 
-            At each step of the way:
-              1) Sub-optimal way of doing things
-              2) Better way is established
-              3) Better way introduces new questions &amp; challenges
-              4) GOTO: 1)
+        <section>
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            <p>Wonderful! We had begun breaking down large, complex designs into smaller, more manageable parts. This helped us highlight and eliminate unintentional UI inconsistencies.</p>
+            <p>End users got more consistent, more usable interfaces to interact with.</p>
+            <p>Businesses benefitted from less redundancy in the work. Where portions of the UI may have been re-designed, re-developed, re-tested and, when bugs were found, fixed many times over, now they were being made once and re-<em>used</em> many times.</p>
+          </aside>
+        </section>
+
+
+        <section>
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            <p>However, we had also unearthed a new set of challenges...</p>
+            <p>How do we organise and name our UI components?</p>
+            <p>How far should we break them down?</p>
+            <p>On the dev side in particular, how do we visualise individual UI components in the browser?</p>
+          </aside>
+        </section>
+
+
+        <section>
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            <p>Once again, our methods and tools needed to evolve.</p>
+            <p>Methodologies like "Atomic Design" gave us a shared mental model and vocabulary to help us organise our libraries of UI components.</p>
+            <p>Bespoke, manually maintained pages containing "one of everything" were replaced by auto-generated pattern library websites. The likes of Pattern Lab, Fractal, StoryBook and many others allowed us to breathe life into our style guides. They were no longer limited to showing us static mock-ups of how a UI component should look or behave, they could now showcase the <em>actual</em> UI components themselves.</p>
+          </aside>
+        </section>
+
+
+        <section>
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            <p>Modular designs and living styleguides make even more sense when you consider all the other aspects our websites need to take into account:</p>
+            <ul>
+              <li><strong>Device-agnosticism</strong>: Your components can have responsive layouts and respond to various forms of input.</li>
+              <li><strong>Accessibility</strong>: Visual aspects like font sizes and colour contrast. Technical implementations that play nice with assistive technologies.</li>
+              <li><strong>Robustness</strong>: Layouts and behaviours that can cope with highly variable content. Use of progressive enhancement to ensure that users stuck on archaic browsers, or simply with iffy mobile reception, can access content and complete tasks.</li>
+              <li>The list goes on...</li>
+            </ul>
+            <p>We can bake a lot of that into the design and implementation of the components themselves. Our living styleguides are key enablers for doing so as they provide us with instant and <em>real world</em> feedback as we do so.</p>
+          </aside>
+        </section>
+
+
+        <section>
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            <p>Unsurprisingly, crafting well organised, beautiful, living styleguides is rapidly becoming the de-facto way we approach much of our UI work.</p>
+            <p>However, our journey does not end there! Once you have a living styleguide, a whole slew of questions inevitably arise...</p>
+            <p>How do we share UI code between our style guide and our website?</p>
+            <p>How do we continually keep both up-to-date and in sync?</p>
+            <p>What happens when we need to support more than a single website?</p>
+            <p>How do we cope with multiple CMSes and front-end frameworks?</p>
+          </aside>
+        </section>
+
+
+        <section>
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            <p>What happens when there is a re-design?</p>
+            <p>Do we start over again, beginning with static, visual designs?</p>
+            <p>Or, can we evolve our UI components directly in the code?</p>
+          </aside>
+        </section>
+
+
+        <section>
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            <p>With so many questions and challenges, you could be forgiving for throwing your hands up in despair and running back to PhotoShop's bosom.</p>
+            <p>That's why it's so important to remember how we got here. Living style guides <em>are</em> better than what went before. They are the culmination of many solutions to many problems.</p>
+            <p>They're just not an excuse to sit still. Rather, they are your gateway drug into something far bigger and more exciting.</p>
+            <p>You have unwittingly begun work on your <strong>design system</strong>!
+          </aside>
+        </section>
+
+
+        <section>
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            <p>People struggle to explain design systems succinctly because they are not <em>one</em> thing.</p>
+            <p>Depending on your point of view, they might be described the effort to scale up your living style guide to serve an entire organisation.</p>
+            <p>From a business person's perspective, they could be considered the means by which an organisation gets more efficient at delivering consistent, high-quality UIs.</p>
+            <p>The marketing team might simply think of them as the replacement for their old brand guidelines PDF.</p>
+            <p>Maybe they are the never-ending struggle to discover the perfect way to make interactive products, that we are all doomed to persue!</p>
+
+            <p>The one thing everyone does agree on is that design systems must encompass code, designs, documentation, tools and people. Furthermore, they are never "done" - in order to continuously deliver value, they must themselves be maintained continuously.</p>
+            <p>Perhaps "design <em>eco</em>-system" would have been a more appropriate name!</p>
+          </aside>
+        </section>
+
+
+
+        <section>
+          <!-- Visible slide content goes here -->
+
+          <aside class="notes">
+            <p>So, what can we all do to grow our design systems and keep them healthy?</p>
+
           </aside>
         </section>
 
