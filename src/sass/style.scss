@@ -1,3 +1,14 @@
 
 // Custom Reveal.js theme
 @import 'theme';
+
+.reveal {
+
+  // Take the sub-title font-size down a notch
+  hgroup h2 {
+    font-size: $heading3Size;
+  }
+
+
+
+}
