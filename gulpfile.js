@@ -12,6 +12,7 @@ function absPath(relativePath){
 const paths = {
   dist: absPath('dist/'),
   htmlFile: absPath('src/index.html'),
+  imgGlob: absPath('src/images/**/*'),
   reveal: {
     base: absPath('node_modules/reveal.js/')
   },
@@ -40,6 +41,13 @@ function htmlTask(){
   return gulp.src(paths.htmlFile)
     .pipe(gulp.dest(paths.dist));
 };
+
+// Copy images to output
+function imageTask(){
+  return gulp.src(paths.imgGlob)
+    .pipe(gulp.dest(path.resolve(paths.dist, 'images')));
+};
+
 
 // Copy Reveal.js stuff output
 function revealTask(){
@@ -83,7 +91,13 @@ function watchTask(){
     paths.htmlFile,
     { awaitWriteFinish: true },
     gulp.series(htmlTask, reloadTask)
-  )
+  );
+
+  gulp.watch(
+    paths.imgGlob,
+    { awaitWriteFinish: true },
+    gulp.series(imageTask, reloadTask)
+  );
 };
 
 
@@ -101,7 +115,7 @@ function serveTask(done){
 
 
 
-gulp.task('default', gulp.series(cleanTask, gulp.parallel(htmlTask, sassTask, revealTask)));
+gulp.task('default', gulp.series(cleanTask, gulp.parallel(htmlTask, sassTask, revealTask, imageTask)));
 
 gulp.task('watch', gulp.series('default', watchTask));
 gulp.task('serve', gulp.series('default', serveTask, watchTask));

@@ -2,6 +2,17 @@
 // Custom Reveal.js theme
 @import 'theme';
 
+@mixin text-outline($width, $color) {
+  // Using technique described here:
+  // https://css-tricks.com/adding-stroke-to-web-text/
+  text-shadow:
+    $width $width 0 $color,
+    $width (-1 * $width) 0 $color,
+    (-1 * $width) (-1 * $width) 0 $color,
+    (-1 * $width) $width 0 $color;
+}
+
+
 .reveal {
 
   // Take the sub-title font-size down a notch
@@ -11,4 +22,34 @@
 
 
 
+  .meme {
+    font-family: 'League Gothic', Impact, sans-serif;
+    font-size: $heading3Size;
+    color: #fff;
+    @include text-outline(0.07em, #000);
+  }
+
 }
+
+// "Special" slides
+
+#ds-morpheus {
+  box-sizing: border-box;
+  height: 100%;
+
+  .top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    text-align: left;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+  }
+}
+
