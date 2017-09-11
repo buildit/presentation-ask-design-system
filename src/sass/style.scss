@@ -29,6 +29,18 @@
     @include text-outline(0.07em, #000);
   }
 
+  // Additional fragment SFX
+  .slides section .fragment {
+
+    &.invert {
+      filter: invert(100%);
+
+      &.visible {
+        filter: invert(0%);
+      }
+    }
+  }
+
 }
 
 // "Special" slides
