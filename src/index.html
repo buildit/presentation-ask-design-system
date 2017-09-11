@@ -336,6 +336,29 @@
 		      { src: './reveal/plugin/notes/notes.js', async: true }
         ]
       });
+
+      // IFFE to avoid polluting global var
+      (function(){
+
+        // Freya's slide
+        var freyaPortrait = document.querySelector('#freyas-story .portrait');
+        var freyaName = document.querySelector('#freyas-story .name');
+
+        Reveal.addEventListener('fragmentshown', function(event){
+          if( event.fragment === freyaPortrait){
+            // When Freya's portrait is shown, immediately show her name too
+            Reveal.nextFragment();
+          }
+        });
+
+        Reveal.addEventListener('fragmenthidden', function(event){
+          if( event.fragment === freyaName){
+            // When Freya's name is hidden, immediately hide her portrait too
+            Reveal.prevFragment();
+          }
+        });
+
+      })();
 		</script>
   </body>
 </html>
