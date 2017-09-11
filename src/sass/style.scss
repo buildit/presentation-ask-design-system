@@ -45,20 +45,6 @@
       background: none;
     }
 
-    // Portrait image
-    .portrait {
-      // Make the portrait image overflow the slide
-      max-height: 120%;
-    }
-
-    .name {
-      max-width: 40%;
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-
   }
 
 
@@ -81,7 +67,36 @@
 
 #freyas-story {
   text-align: left;
+
+  .portrait {
+    // Make the portrait image overflow the slide
+    max-height: 120%;
+  }
+
+  .name {
+    max-width: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 }
+
+
+#daves-story {
+  text-align: right;
+
+  .portrait {
+    max-height: 110%;
+  }
+
+  .name {
+    max-width: 40%;
+    position: absolute;
+    left: 0;
+    top: 30%;
+  }
+}
+
 
 #ds-morpheus {
   box-sizing: border-box;

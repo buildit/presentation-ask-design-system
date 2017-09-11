@@ -98,9 +98,9 @@
 
 
         <!-- Slide 5 : Example of designer pain -->
-        <section>
-          <h1>Design pain</h1>
-          <!-- Visible slide content goes here -->
+        <section id="daves-story" class="character" data-background-image="images/dave-bg.jpg">
+          <img src="images/dave.png" class="fragment fade-up invert portrait" alt="Portrait of Dave">
+          <img src="images/dave-name.png" class="fragment fade-down invert name" alt="Dave the Designer">
 
           <aside class="notes">
             <p>Drink a shot if this seems familiar:</p>
@@ -344,15 +344,25 @@
         var freyaPortrait = document.querySelector('#freyas-story .portrait');
         var freyaName = document.querySelector('#freyas-story .name');
 
+        // Freya's slide
+        var davePortrait = document.querySelector('#daves-story .portrait');
+        var daveName = document.querySelector('#daves-story .name');
+
         Reveal.addEventListener('fragmentshown', function(event){
-          if( event.fragment === freyaPortrait){
+          if(
+            event.fragment === freyaPortrait ||
+            event.fragment === davePortrait
+          ){
             // When Freya's portrait is shown, immediately show her name too
             Reveal.nextFragment();
           }
         });
 
         Reveal.addEventListener('fragmenthidden', function(event){
-          if( event.fragment === freyaName){
+          if(
+            event.fragment === freyaName ||
+            event.fragment === daveName
+          ){
             // When Freya's name is hidden, immediately hide her portrait too
             Reveal.prevFragment();
           }
