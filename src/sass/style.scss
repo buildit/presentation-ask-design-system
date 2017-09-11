@@ -21,13 +21,47 @@
   }
 
 
-
   .meme {
     font-family: 'League Gothic', Impact, sans-serif;
     font-size: $heading3Size;
     color: #fff;
     @include text-outline(0.07em, #000);
   }
+
+
+
+
+  // Character slides
+  .character {
+    // Make slide container match slide height
+    box-sizing: border-box;
+    height: 100%;
+
+    .portrait,
+    .name {
+      // Undo reveal.js's usual image styling
+      border: none;
+      box-shadow: none;
+      background: none;
+    }
+
+    // Portrait image
+    .portrait {
+      // Make the portrait image overflow the slide
+      max-height: 120%;
+    }
+
+    .name {
+      max-width: 40%;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+
+  }
+
+
 
   // Additional fragment SFX
   .slides section .fragment {
@@ -44,6 +78,10 @@
 }
 
 // "Special" slides
+
+#freyas-story {
+  text-align: left;
+}
 
 #ds-morpheus {
   box-sizing: border-box;

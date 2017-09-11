@@ -12,7 +12,7 @@ function absPath(relativePath){
 const paths = {
   dist: absPath('dist/'),
   htmlFile: absPath('src/index.html'),
-  imgGlob: absPath('src/images/**/*'),
+  imgGlob: absPath('src/images/**/*.{jpg,gif,png}'),
   reveal: {
     base: absPath('node_modules/reveal.js/')
   },
