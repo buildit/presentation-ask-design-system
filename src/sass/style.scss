@@ -15,6 +15,13 @@
 
 .reveal {
 
+  section img {
+    // Undo irritating image styling from reveal.js
+    border: none;
+    box-shadow: none;
+    background: none;
+  }
+
   // Take the sub-title font-size down a notch
   hgroup h2 {
     font-size: $heading3Size;
@@ -36,15 +43,6 @@
     // Make slide container match slide height
     box-sizing: border-box;
     height: 100%;
-
-    .portrait,
-    .name {
-      // Undo reveal.js's usual image styling
-      border: none;
-      box-shadow: none;
-      background: none;
-    }
-
   }
 
 

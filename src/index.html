@@ -23,9 +23,12 @@
             &amp; <a href="http://cirrus.twiddles.com/">James Nash</a> (<a href="https://twitter.com/c1rrus">@c1rrus</a>)
           </p>
 
+          <img src="images/buildit-logo.svg" alt="Buildit @ Wipro Digital">
+
           <aside class="notes">
             <ul>
               <li>Presenters introduce themselves</li>
+              <li>
               <li>Initial statements:</li>
               <li><strong>Why</strong> DS?</li>
               <li><strong>What</strong> are DS?</li>
@@ -39,7 +42,10 @@
 
               <p>We both work for the digital transformation agency <a href="http://buildit.wiprodigital.com/">Buildit @ Wipro Digital</a>.</p>
 
-              <p>Today, we're going to talk to you about design systems:</p>
+              <!-- For "State of the Browser" conference -->
+              <p>Today we've heard a lot of great stuff about the state of our web browsers and how we can construct nifty things for them to render.</p>
+              <p>We're now going to talk about something that can help us as we go about making those nifty things: Design Systems.</p>
+
               <p>Why do we have them?</p>
               <p>What are they?</p>
               <p>How we can all interact with them?</p>
@@ -127,7 +133,7 @@
           <aside class="notes">
             <ul>
               <li><strong>Dave the designer</strong></li>
-              <li>Wants to share work but every mehtod is blocked</li>
+              <li>Wants to share work but every method is blocked</li>
 
             </ul>
 
@@ -178,7 +184,11 @@
 
         <!-- Slide 7 : Transition to DS history -->
         <section>
-          <!-- Visible slide content goes here -->
+          <ul>
+            <li class="fragment">💩 Handovers hangovers</li>
+            <li class="fragment">💩 Draconian IT</li>
+            <li class="fragment">💩 Project failures</li>
+          </ul>
 
           <aside class="notes">
             <ul>
@@ -202,6 +212,7 @@
         <section>
           <!-- Visible slide content goes here -->
 
+
           <aside class="notes">
             <ul>
               <li><strong>Modular mindset</strong></li>
@@ -209,7 +220,7 @@
               <li>CSS techniques</li>
               <li>Styleguide docs</li>
               <li>Design tools</li>
-              <li>Less redundancy --> less $$$</li>
+              <li>Less redundancy --> less $$$ <strong>Good for Beth!</strong></li>
               <li><strong>Better handover</strong></li>
             </ul>
 
@@ -286,7 +297,7 @@
               <li><strong>Living style guides</strong> continued</li>
               <li>Design &amp; dev collab critical. UIs need to be:</li>
               <li>Device-agnostic</li>
-              <li>Accessible</li>
+              <li>Inclusive</li>
               <li>Performant</li>
               <li>Resilient</li>
               <li><strong>Living style guide is facilitator</strong></li>
@@ -296,13 +307,14 @@
               <p>Think about it. It should go without saying that a modern web experience, and thus the UI components it is made out of, must be:</p>
               <ul>
                 <li><strong>Device-agnostic</strong>: They need to work well with arbitrary viewport sizes and input mechanisms.</li>
-                <li><strong>Accessible</strong>: People with all kinds of impairments need to be able to interact with them, potentially with the help of assistive technologies.</li>
+                <li><strong>Inclusive</strong>: People with all kinds of impairments need to be able to interact with them, potentially with the help of assistive technologies.</li>
                 <li><strong>Performant</strong>: We know that slow page loads and sluggish UI performance will frustrate users. Every part of our UI therefore needs to be as efficient as possible.</li>
                 <li><strong>Resilient</strong>: Our UI components may be populated with unpredictable content from a CMS. Will they cope well with long words, lengthy runs of text or unusually proportioned images? They might not run in ideal conditions either. Do they work without JavaScript? Or offline? Or in IE8?</li>
               </ul>
               <p>Figuring out how to meet all these criteria has to be a team effort. Dave the designer, Freya the front-end developer and also Ursula from UX will need to put their heads together.</p>
               <p>And yet, a wireframe document or a static visual design can never anticipate or express all the nuances that need to go into the actual implementation. Only code can do that.</p>
               <p>A living style guide can be the means by which developers can demonstrate their work to the other disciplines and get their feedback and input. Changes can be made to the code and previewed almost instantly so the whole team can rapidly iterate the <em>actual</em> UI components until they are done.</p>
+              <p>Basically, <strong>living style guides are <em>the shit</em>!</strong></p>
             </div>
           </aside>
         </section>
@@ -318,6 +330,7 @@
               <li>Sharing code with prod?</li>
               <li>Keeping everything in sync?</li>
               <li>Supporting multiple products?</li>
+              <li>Keeping people in the loop</li>
             </ul>
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
@@ -328,6 +341,7 @@
               <p>How do we continually keep design artefacts, living style guides and the website built from them up-to-date and in sync?</p>
               <p>What happens when we need to support more than a single website?</p>
               <p>How do we cope with multiple CMSes and front-end frameworks?</p>
+              <p>How do you keep everyone who needs to be involved in the loop?</p>
             </div>
           </aside>
         </section>
@@ -361,7 +375,9 @@
 
           <aside class="notes">
             <ul>
-              <li></li>
+              <li>Design system is not <em>one</em> thing</li>
+              <li>Covers code, designs, docs, tools &amp; people</li>
+              <li>Should've been "design eco-system"</li>
             </ul>
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
@@ -394,7 +410,9 @@
 
           <aside class="notes">
             <ul>
-              <li></li>
+              <li>Need to be supported</li>
+              <li>Need support form the org</li>
+              <li>Doing it is <strong>hard</strong></li>
             </ul>
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
@@ -416,7 +434,9 @@
 
           <aside class="notes">
             <ul>
-              <li></li>
+              <li>Benefits seem obvious</li>
+              <li>Actual $ value hard to establish though</li>
+              <li>Something boss, PM, UX, marketing, etc. can help with</li>
             </ul>
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
@@ -436,7 +456,10 @@
 
           <aside class="notes">
             <ul>
-              <li></li>
+              <li>Great tools for web dev</li>
+              <li>Not so great for native</li>
+              <li>What about non-visual stuff?</li>
+              <li>Something for everyone!</li>
             </ul>
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
