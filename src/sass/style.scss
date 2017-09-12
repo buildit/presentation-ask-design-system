@@ -98,6 +98,23 @@
 }
 
 
+#beths-story {
+  text-align: left;
+
+  .portrait {
+    // Make the portrait image overflow the slide
+    max-height: 120%;
+  }
+
+  .name {
+    max-width: 40%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+
 #ds-morpheus {
   box-sizing: border-box;
   height: 100%;
