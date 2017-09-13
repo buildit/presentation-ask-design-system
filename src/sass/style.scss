@@ -62,6 +62,12 @@
 }
 
 // "Special" slides
+#hands-up {
+  box-sizing: border-box;
+  height: 100%;
+
+  text-align: left;
+}
 
 #trenches {
   text-align: left;
@@ -120,6 +126,24 @@
     top: 0;
   }
 }
+
+
+#pain-summary {
+  li {
+    font-size: $heading2Size;
+    list-style-type: none;
+
+    + li {
+      margin-top: 0.5em;
+    }
+
+    &:before {
+      content: '💩';
+      margin-right: 0.5em;
+    }
+  }
+}
+
 
 #hostile-environment {
   box-sizing: border-box;
