@@ -129,6 +129,19 @@
   }
 }
 
+#undead-styleguide {
+  box-sizing: border-box;
+  height: 100%;
+
+  img {
+    position: absolute;
+    width: 40%;
+    max-height: auto;
+    bottom: -15%;
+    right: 10%;
+  }
+}
+
 #ds-morpheus {
   box-sizing: border-box;
   height: 100%;
