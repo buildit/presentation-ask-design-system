@@ -133,7 +133,15 @@
   box-sizing: border-box;
   height: 100%;
 
-  img {
+  .name {
+    position: absolute;
+    width: 40%;
+    max-height: auto;
+    top: 5%;
+    left: 5%;
+  }
+
+  .portrait {
     position: absolute;
     width: 40%;
     max-height: auto;
