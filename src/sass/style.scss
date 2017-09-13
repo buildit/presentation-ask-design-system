@@ -117,6 +117,17 @@
   }
 }
 
+#hostile-environment {
+  box-sizing: border-box;
+  height: 100%;
+
+  img {
+    position: absolute;
+    left: 10%;
+    bottom: -22%;
+    width: 65%;
+  }
+}
 
 #ds-morpheus {
   box-sizing: border-box;
