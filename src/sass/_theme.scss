@@ -3,8 +3,14 @@
 @import 'template/mixins';
 @import 'template/settings';
 
-// Our rules go here
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i');
 
+// Our rules go here
+$mainFont: Ubuntu, 'sans-serif';
+$mainFontSize: 36px;
+
+$headingFont: Ubuntu, 'sans-serif';
+$headingFontWeight: bold;
 $heading1Size: 2.5em;
 $heading2Size: 1.9em;
 $heading3Size: 1.4em;
