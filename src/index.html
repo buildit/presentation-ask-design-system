@@ -98,8 +98,10 @@
 
         <!-- Slide 4 : Example of developer pain -->
         <section id="freyas-story" class="character" data-background-image="images/freya-bg.jpg">
-          <img src="images/freya.png" class="fragment fade-up invert portrait" alt="Portrait of Freya">
+          <img src="images/freya-happy.png" class="fragment fade-up invert portrait" alt="Portrait of Freya">
           <img src="images/freya-name.png" class="fragment fade-down invert name" alt="Freya the Front-end Developer">
+          <img src="images/freya-duh.png" class="fragment portrait" alt="Portrait of neutral Freya">
+          <img src="images/freya-wtf.png" class="fragment portrait" alt="Portrait of angry Freya">
 
           <aside class="notes">
             <ul>
@@ -122,8 +124,10 @@
 
         <!-- Slide 5 : Example of designer pain -->
         <section id="daves-story" class="character" data-background-image="images/dave-bg.jpg">
-          <img src="images/dave.png" class="fragment fade-up invert portrait" alt="Portrait of Dave">
+          <img src="images/dave-happy.png" class="fragment fade-up invert portrait" alt="Portrait of happy Dave">
           <img src="images/dave-name.png" class="fragment fade-down invert name" alt="Dave the Designer">
+          <img src="images/dave-duh.png" class="fragment portrait" alt="Portrait of neutral Dave">
+          <img src="images/dave-wtf.png" class="fragment portrait" alt="Portrait of angry Dave">
           <aside class="notes">
             <ul>
               <li><strong>Dave the designer</strong></li>
@@ -148,8 +152,11 @@
         <!-- Slide 6 : Example of manager pain -->
         <!-- BG photo credit: https://www.flickr.com/photos/143842337@N03/32590257662/ -->
         <section id="beths-story" class="character" data-background-image="images/beth-bg.jpg">
-          <img src="images/beth.png" class="fragment fade-up invert portrait" alt="Portrait of Beth">
+          <img src="images/beth-happy.png" class="fragment fade-up invert portrait" alt="Portrait of happy Beth">
           <img src="images/beth-name.png" class="fragment fade-down invert name" alt="Beth the Boss">
+          <img src="images/beth-duh.png" class="fragment portrait" alt="Portrait of neutral Beth">
+          <img src="images/beth-wtf.png" class="fragment portrait" alt="Portrait of angry Beth">
+
 
           <aside class="notes">
             <ul>
@@ -517,17 +524,15 @@
       (function(){
 
         // Freya's slide
-        var freyaPortrait = document.querySelector('#freyas-story .portrait');
+        var freyaPortrait = document.querySelector('#freyas-story .portrait.fade-up');
         var freyaName = document.querySelector('#freyas-story .name');
 
         // Dave's slide
-        var davePortrait = document.querySelector('#daves-story .portrait');
-        var davePortrait = document.querySelector('#daves-story .portrait');
-        var daveName = document.querySelector('#daves-story .name');
+        var davePortrait = document.querySelector('#daves-story .portrait.fade-up');
         var daveName = document.querySelector('#daves-story .name');
 
         // Beth's slide
-        var bethPortrait = document.querySelector('#beths-story .portrait');
+        var bethPortrait = document.querySelector('#beths-story .portrait.fade-up');
         var bethName = document.querySelector('#beths-story .name');
 
         Reveal.addEventListener('fragmentshown', function(event){

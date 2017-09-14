@@ -82,8 +82,10 @@
   text-align: left;
 
   .portrait {
-    // Make the portrait image overflow the slide
-    max-height: 120%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 110%;
   }
 
   .name {
@@ -99,7 +101,9 @@
   text-align: right;
 
   .portrait {
-    max-height: 110%;
+    position: absolute;
+    right: 0;
+    top: 10%;
   }
 
   .name {
@@ -116,7 +120,10 @@
 
   .portrait {
     // Make the portrait image overflow the slide
-    max-height: 120%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    max-height: 110%;
   }
 
   .name {
