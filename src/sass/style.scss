@@ -63,6 +63,47 @@
 }
 
 // "Special" slides
+#cover {
+  text-align: left;
+
+  h1 {
+    margin-bottom: 1em;
+  }
+
+  p {
+    float: left;
+  }
+
+  img {
+    float: right;
+    border-left: 1px solid #aaa;
+    padding: 0.8em 0 0.8em 1.6em;
+    width: 32%;
+  }
+
+  .presenter {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.8em;
+
+    a:first-child {
+      font-size: $mainFontSize;
+      display: block;
+    }
+
+    &:nth-of-type(1) {
+      padding-right: 1em;
+    }
+
+    &:nth-of-type(2) {
+      padding-left: 1em;
+    }
+  }
+
+}
+
+
 #hands-up {
   box-sizing: border-box;
   height: 100%;
@@ -305,6 +346,7 @@
 }
 
 #ask-not {
+  text-align: left;
 
   blockquote {
     background: none;
