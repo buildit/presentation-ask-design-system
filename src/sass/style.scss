@@ -239,6 +239,41 @@
   }
 }
 
+#product-not-project {
+  box-sizing: border-box;
+  height: 100%;
+  background-image: url('images/nathan-curtis.png');
+  background-size: cover;
+
+  blockquote {
+    background: none;
+    box-shadow: none;
+    border: none;
+
+    font-style: normal;
+    font-size: 1.6em;
+    color: #000;
+    text-align: left;
+
+    position: absolute;
+    top: 1%;
+    right: 7%;
+    width: 46%;
+
+    footer {
+      text-align: right;
+      margin-top: 1.5em;
+      font-size: $mainFontSize;
+      color: #888;
+    }
+
+    cite:before {
+      content: '- ';
+    }
+  }
+
+}
+
 #getting-started {
 
   > ul {
