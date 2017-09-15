@@ -117,6 +117,22 @@
   }
 }
 
+
+#patternlab {
+  width: 100%;
+  text-align: left;
+
+  .portrait {
+    // Make the portrait image overflow the slide
+    max-height: 120%;
+    max-width: 40%;
+    position: absolute;
+    left: -10vw;
+    bottom: -8vh;
+    transform: rotate(7deg);
+  }
+}
+
 #hostile-environment {
   box-sizing: border-box;
   height: 100%;
@@ -128,6 +144,8 @@
     width: 65%;
   }
 }
+
+
 
 #undead-styleguide {
   box-sizing: border-box;
