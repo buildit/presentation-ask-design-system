@@ -210,3 +210,35 @@
   }
 }
 
+#web-party {
+  box-sizing: border-box;
+  height: 100%;
+
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+  }
+}
+
+#getting-started {
+
+  > ul {
+    column-count: 2;
+
+    > li {
+      font-size: $heading3Size;
+    }
+
+    > li + li {
+      margin-top: 1em;
+    }
+  }
+
+
+  li ul {
+    font-size: $mainFontSize;
+  }
+
+}
