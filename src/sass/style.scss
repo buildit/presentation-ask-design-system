@@ -274,13 +274,19 @@
 
 }
 
-#getting-started {
+#to-do,
+#to-do-2 {
+  box-sizing: border-box;
+  height: 100%;
 
   > ul {
     column-count: 2;
+    column-gap: 2em;
 
     > li {
       font-size: $heading3Size;
+      break-inside: avoid;
+      list-style-type: none;
     }
 
     > li + li {
@@ -291,6 +297,28 @@
 
   li ul {
     font-size: $mainFontSize;
-  }
 
+    li {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+#ask-not {
+
+  blockquote {
+    background: none;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    width: 90%;
+
+    font-size: $heading4Size;
+    font-style: normal;
+
+    p:nth-child(n + 2) {
+      font-weight: bold;
+      font-size: $heading3Size;
+    }
+  }
 }
