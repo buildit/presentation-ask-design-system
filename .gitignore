@@ -1,6 +1,6 @@
 # Build nyc_output
 dist/
-
+src/images/brad.psd
 
 # Logs
 logs

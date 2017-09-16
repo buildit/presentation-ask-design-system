@@ -197,19 +197,44 @@
   }
 }
 
+#modular-mindset {
+  box-sizing: border-box;
+  height: 100%;
+  text-align: center;
+
+  h3 {
+    font-size: $heading2Size;
+  }
+}
+
+#challenges {
+  box-sizing: border-box;
+  height: 100%;
+  text-align: center;
+
+  h3 {
+    font-size: $heading3Size;
+  }
+  > h3 {
+    font-size: $heading2Size;
+    text-transform: lowercase;
+  }
+}
 
 #patternlab {
   width: 100%;
   text-align: left;
 
+  p {
+      font-size: $heading3Size/2;
+  }
   .portrait {
     // Make the portrait image overflow the slide
-    max-height: 120%;
-    max-width: 40%;
     position: absolute;
-    left: -10vw;
-    bottom: -8vh;
-    transform: rotate(7deg);
+    top: 45%;
+    right: 2%;
+    max-height: 50%;
+    transform: rotate(-25deg);
   }
 }
 
