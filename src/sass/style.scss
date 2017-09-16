@@ -164,8 +164,20 @@
   h3 {
     font-size: $heading2Size;
   }
+}
 
+#challenges {
+  box-sizing: border-box;
+  height: 100%;
+  text-align: center;
 
+  h3 {
+    font-size: $heading3Size;
+  }
+  > h3 {
+    font-size: $heading2Size;
+    text-transform: lowercase;
+  }
 }
 
 #patternlab {
