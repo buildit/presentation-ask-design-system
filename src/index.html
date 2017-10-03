@@ -12,11 +12,9 @@
     <div class="reveal">
       <div class="slides">
 
-
-        <!-- Slide 1 : Presenter intros + initial statements -->
+        <!-- Slide 1 : Presenters intros + initial statements -->
         <section id="cover" data-background-image="images/collage.jpg">
           <h1>Ask not what your design system can do for you...</h1>
-
           <p>
             <span class="presenter">
               <a href="https://about.me/marcospeebles">Marcos Peebles</a>
@@ -27,41 +25,46 @@
               <a href="http://cirrus.twiddles.com/">James Nash</a>
               (<a href="https://twitter.com/c1rrus">@c1rrus</a>)
             </span>
+            &amp;
+            <span class="presenter">
+              <a href="http://peach.smartart.it/">Matteo Pescarin</a>
+              (<a href="https://twitter.com/ilpeach">@ilpeach</a>)
+            </span>
           </p>
 
           <img src="images/buildit-logo.svg" alt="Buildit @ Wipro Digital">
-
 
           <aside class="notes">
             <ul>
               <li>Presenters introduce themselves</li>
               <li>Initial statements:</li>
-              <li><strong>Why</strong> DS?</li>
+              <ul><li><strong>Why</strong> DS?</li>
               <li><strong>What</strong> are DS?</li>
-              <li><strong>How ot interact</strong> with DS?</li>
+              <li><strong>How to interact</strong> with DS?</li>
+            </ul>
             </ul>
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
-              <p>Hi, I'm Marcos and this is James, a true legend. A webmaster. He's been noodling around the WWW (remember when we still called it that?) for about 20 years now. He took some detours along the way, working on a smartphone operating system and, later, entering the realm of UX. However, he keep finding himself gravitating back towards webby things, after all, a true leopard doesn't change his spots :)</p>
+              <!-- Marcos and James -->
+              <p>Hi, I'm Marcos and this is James, a true legend. A webmaster. He's been noodling around the WWW (world wide web, remember when we still called it that?) for about 20 years now. He took some detours along the way, working on a smartphone operating system and, later, entering the realm of UX. However, he keep finding himself gravitating back towards webby things, after all, a true leopard doesn't change his spots :)</p>
 
-              <p>Hi, I'm James and this </p>
-
+              <p>Hi, I'm James and this is Marcos (also a real webmaster) he's been around even longer then me, spreading the love amongst 4 different continents. Jumping from code to design and back while managing his way around...</p>
               <p>We both work for the digital transformation agency <a href="http://buildit.wiprodigital.com/">Buildit @ Wipro Digital</a>.</p>
 
               <!-- For "State of the Browser" conference -->
               <p>Today we've heard a lot of great stuff about the state of our web browsers and how we can construct nifty things for them to render.</p>
-              <p>We're now going to talk about something that can help us as we go about making those nifty things: Design Systems.</p>
+              <p>We're now going to talk about something that can help us as we go about making those nifty things: <a href="https://medium.com/buildit/tagged/design-systems" title="Design Systems Buildit Medium">Design Systems</a>.</p>
 
-              <p>Why do we have them?</p>
-              <p>What are they?</p>
-              <p>How we can all interact with them?</p>
+              <ul>
+                <li>Why do we have them?</li>
+                <li>What are they?</li>
+                <li>How we can all interact with them?</li>
+              </ul>
             </div>
           </aside>
         </section>
 
-
         <!-- Slide 2 : Ask the audience -->
-        <!-- Img credit: https://unsplash.com/photos/-5rA4DRrEXU -->
         <section id="hands-up" data-background-image="images/hands-up.jpg">
           <p>Hands up if you have...</p>
           <p class="fragment fade-down current-visible">...heard of "design systems"</p>
@@ -74,12 +77,15 @@
               <li>Worked on one?</li>
               <li>Have an elevator pitch?</li>
             </ul>
+            <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
+              <p>See where the audience stands on the matter.</p>
+
+              <cite>Img credit: https://unsplash.com/photos/-5rA4DRrEXU</cite>
+            </div>
           </aside>
         </section>
 
-
         <!-- Slide 3 : Tales from the trenches -->
-        <!-- Photo source: https://www.awm.gov.au/collection/C1005971 -->
         <section id="trenches" data-background-image="images/trenches.jpg">
           <h1>Tales from the trenches</h1>
 
@@ -96,15 +102,14 @@
               <p>Certainly, Marcos and I have seen our fair share.</p>
               <p>Over the years we've seen some awful things...</p>
               <p><em>Unspeakable</em> things...</p>
-              <p>Things that will haunt us for the rest of our days.</p>
-              <p>...</p>
-              <p>So, ummm, yeah. Let's look at a few examples, shall we?</p>
+              <p><a href="http://tenyearsago.io/" title="Ten years ago...">Things that will haunt us for the rest of our days</a>... so, ummm, yeah. Let's look at a few examples, shall we?</p>
+
+              <cite>Img credit: https://www.awm.gov.au/collection/C1005971</cite>
             </div>
           </aside>
         </section>
 
-
-        <!-- Slide 4 : Example of developer pain -->
+        <!-- Slide 4 : Example of developer pain, Freya -->
         <section id="freyas-story" class="character" data-background-image="images/freya-bg.jpg">
           <img src="images/freya-happy.png" class="fragment fade-up invert portrait" alt="Portrait of Freya">
           <img src="images/freya-name.png" class="fragment fade-down invert name" alt="Freya the Front-end Developer">
@@ -122,20 +127,20 @@
               <p>Meet Freya the front-end developer.</p>
               <p>Freya is working on a project to build a small microsite. By the time she gets to see actual visual designs, they have already been through numerous iterations and, at long last, signed off by the client.</p>
               <p>Grudgingly, she begins analysing the designs. For the 5 page microsite this project is meant to deliver, she counts 4 distinct button designs, 3 modal overlay styles and 7 different font sizes.</p>
-              <p>The layout for the "desktop" design assumes a different ordering of HTML elements than the corresponding "mobile" design.</p>
+              <p>The layout for the "desktop" design assumes a different ordering of HTML elements than <a href="https://www.smashingmagazine.com/2017/02/mobile-first-is-just-not-good-enough-meet-journey-driven-design/" title="Mobile First is just not good enough">the corresponding "mobile" design.</a></p>
               <p>All the placeholder texts for headings, user names and product features fit perfectly on one line - how convenient!</p>
               <p>If only she had been involved earlier. These design bugs could have been eliminated before they were "signed off", let alone got passed on to the dev team.</p>
             </div>
           </aside>
         </section>
 
-
-        <!-- Slide 5 : Example of designer pain -->
+        <!-- Slide 5 : Example of designer pain, Dave -->
         <section id="daves-story" class="character" data-background-image="images/dave-bg.jpg">
           <img src="images/dave-happy.png" class="fragment fade-up invert portrait" alt="Portrait of happy Dave">
           <img src="images/dave-name.png" class="fragment fade-down invert name" alt="Dave the Designer">
           <img src="images/dave-duh.png" class="fragment portrait" alt="Portrait of neutral Dave">
           <img src="images/dave-wtf.png" class="fragment portrait" alt="Portrait of angry Dave">
+
           <aside class="notes">
             <ul>
               <li><strong>Dave the designer</strong></li>
@@ -146,19 +151,17 @@
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
               <p>Say hello to Dave the designer!</p>
               <p>Dave has produced some visual mock-ups and needs to share them with the team. His boss, Beth, has repeatedly stressed the importance of sharing his work early and often with the rest of the team.</p>
-              <p>Unfortunately for him, access to InVision, ZeroHeight and Zeplin is blocked by the company's network.</p>
-              <p>Dropbox, OneDrive and WeTransfer are all blocked as well.</p>
+              <p>Unfortunately for him, access to <a href="https://www.invisionapp.com/" title="InvisioApp">InVision</a>, <a href="https://www.zeroheight.com/" title="ZeroHeight">ZeroHeight</a> and <a href="https://zeplin.io/" title="Zeplin">Zeplin</a> is blocked by the company's network.</p>
+              <p><a href="https://www.dropbox.com/" title="Dropbox">Dropbox</a>, <a href="https://onedrive.live.com" title="OneDrive">OneDrive</a> and <a href="https://wetransfer.com/" title="WeTransfer">WeTransfer</a> are all blocked as well.</p>
               <p>He therefore attaches his design files to an email and hits send. It bounces back - "maximum attachment size exceeded"</p>
               <p>He tries to use a USB stick only to discover that IT has diabled removable media on his machine.</p>
-              <p>Someone tells him that there's an MS SharePoint site on the intranet he can use to share files.</p>
+              <p>Someone tells him that there's an <a href="http://www.sharepoint.com/" title="MS SharePoint">MS SharePoint site</a> on the intranet he can use to share files.</p>
               <p>He loses the will to live.</p>
             </div>
           </aside>
         </section>
 
-
-        <!-- Slide 6 : Example of manager pain -->
-        <!-- BG photo credit: https://www.flickr.com/photos/143842337@N03/32590257662/ -->
+        <!-- Slide 6 : Example of manager pain, Beth -->
         <section id="beths-story" class="character" data-background-image="images/beth-bg.jpg">
           <img src="images/beth-happy.png" class="fragment fade-up invert portrait" alt="Portrait of happy Beth">
           <img src="images/beth-name.png" class="fragment fade-down invert name" alt="Beth the Boss">
@@ -180,7 +183,7 @@
               <p>What about when you're the business stakeholder?</p>
               <p>The company will be making a very important, flagship product launch. It's timed to hit the Christmas market. The accompanying marketing site therefore <strong>must</strong> go live in November.</p>
               <p>Beth the boss is in charge of getting that site built. By April her UX team has done their research and produced a thoughtful and delightful UI concept. However, it is ambitious in its scope and Beth's Gannt charts tell her there's no way it will all get designed and built by November. Luckily, she has a good handle on what the customers want and she cherrypicks the elements of the UI concept that she really needs and fit her budget.</p>
-              <p>It's now August. Visual design was meant to have finished a month ago, but more design iterations than anticipated were needed. Also, that idiot Mark from marketing didn't help with his lengthy brand compliance reviews. The remaining time and budget left for build is now extremely tight. Beth knows this and is really stressing out over it.</p>
+              <p>It's now August. Visual design was meant to have finished a month ago, but more design iterations than anticipated were needed. Also, that <em>idiot</em> Mark from marketing didn't help with his lengthy brand compliance reviews. The remaining time and budget left for build is now extremely tight. Beth knows this and is really stressing out over it.</p>
               <p>Unsurprisingly, the devs feel the same way and give Beth a hard time. Every sprint planning session feels like a battle. Apparently there are problems in the designs. Those have been signed off though, so there's no way Beth's re-opening that particular can of worms. She soon realises that if she pushes hard enough, the developers eventually give in a build what she wanted. They grumble something about "hacks", but as far as Beth can see it looks great. Probably they're just being divas, or lazy, or both. So annoying!</p>
               <p>A site eventually goes up on staging in October. There was a lot of haggling during the dev phase and Beth had to concede some of the features she really wanted in order to meet her milestones. It doesn't quite live up to her original vision, but it'll have to do.</p>
               <p>The QA team soon come back with all kinds of problems. The homepage takes about 20 seconds to load. The layout and nav on some Android phones is a bit screwy.</p>
@@ -189,7 +192,6 @@
             </div>
           </aside>
         </section>
-
 
         <!-- Slide 7 : Transition to DS history -->
         <section id="pain-summary">
@@ -201,49 +203,52 @@
 
           <aside class="notes">
             <ul>
-              <li>Hangovers due to handovers</li>
+              <li><a href="https://medium.com/buildit/handover-hangover-676cdff4a0ef" title="Hadover? Hangover! buildit post on Medium">Hangovers due to handovers</a></li>
               <li>Draconian IT</li>
               <li>Failed projects</li>
               <li><strong>What have we done about it?</strong></li>
             </ul>
-            <p>Hand-over to Marcos.</p>
+            <p><em>Hand-over</em> to Marcos (...)</p>
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
               <p>Some of these stories will surely seem familiar.</p>
               <p>Whether its hangovers caused by handovers, draconian IT policies or projects failing to deliver - everyone involved has their pain points.</p>
-              <p>There are of course plenty more examples. Ever tried to find the <em>web</em>-font files for the corporate typeface? Have you attempted to style the <code>&lt;select></code> element? You get the idea.</p>
-
+              <p>There are of course plenty more examples. Ever tried to find the <em>web</em>-font files for the corporate typeface? <a href="https://www.google.co.uk/search?q=styling+the+select+element&oq=styling+the+select+element" title="Style select">Have you attempted to style the <code>&lt;select></code> element</a>? You get the idea.</p>
               <p>Fortunately, the web community has been busy addressing these kinds of pains over the years. Let's see what they've been up to...</p>
+
+              <cite>Img credit: https://www.flickr.com/photos/143842337@N03/32590257662/</cite>
             </div>
           </aside>
         </section>
 
         <!-- Slide 8 : Modular mindset and styleguide docs -->
-        <!-- photo source https://upload.wikimedia.org/wikipedia/commons/6/62/Bras%C3%ADlia_Panor%C3%A2mica.jpg -->
         <section id="modular-mindset" data-background-image="images/brasilia.jpg" class="center">
           <!-- Visible slide content goes here -->
           <h3>Modular mindset?</h3>
           <p class="fragment" style="color:rgba(0,0,0,1)"><br />Good for <strong>Freya & Dave & Beth</strong>.</p>
           <p class="fragment"><strong>Better handover!</strong></p>
+
           <aside class="notes">
-              <p>Brasilia: Paul Robert Lloyd, Designing Systems, <b>Part 1: Theory, Practice, and the Unfortunate In-between</b>, https://paulrobertlloyd.com/2017/01/designing_systems_part_1</p>
-              <p>Templating lang, CSS tech, Design Tools, Style guide docs<br />Less redundancy, Better fit, scalable, less ££</p>
+              <p>Modular is NOT new. Look at what mankind has done. Example of Brasilia by Paul Robert Lloyd <a href="https://paulrobertlloyd.com/2017/01/designing_systems_part_1" title="Designing Systems">Designing Systems, <b>Part 1: Theory, Practice, and the Unfortunate In-between</b></a></p>
+              <p>Templating lang, CSS tech, Design Tools, Style guide docs</p>
+              <p>Less redundancy, Better fit, scalable, less £££</p>
+
+            <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
               <p>We realised some time ago that our websites tend to be made up of recurring elements: Headers, footers, links, buttons, etc.</p>
-              <p>On the dev side, ever more sophisticated templating languages have allowed us to write the markup for such elements once and then re-use them many times over. Likewise, techniques and tools to better scale CSS to large and complex projects have arisen.</p>
-              <p>Designers have increasingly been complementing their full-page mock-ups with styleguide documents that lay out the styles in a more modular way. Their tooling improved too. Painstakingly hand-crafted PDF documents have given way to modular vector graphics. Sending large files around has been replaced by cloud-based sharing and synchronisation services.</p>
+              <p>On the dev side, ever more sophisticated templating languages have allowed us to write the markup for such elements once and then re-use them many times over. Likewise, <a href="https://github.com/alexpate/awesome-design-systems" title="Design Systems">techniques and tools to better scale HTML, CSS and JS</a> to large and complex projects have arisen.</p>
+              <p>Designers have increasingly been complementing their full-page mock-ups with styleguide documents that lay out the styles in a more modular way. Their tooling improved too. <a href="http://atomicdesign.bradfrost.com/chapter-5/" "PDF's and friends...">Painstakingly hand-crafted PDF documents</a> have given way to modular vector graphics. Sending large files around has been replaced by cloud-based sharing and synchronisation services.</p>
               <p>This modular mindset has gone a long way towards smoothing the traditional handover between the Daves and Freyas of this world.</p>
               <p>It has also helped surface and eliminate unintentional inconsistencies in the design and implementation. That in turn improves usability.</p>
               <p>Businesses' bottom lines have also benefitted, since there's less redundancy in the work. Less stuff to design and build is also less stuff to maintain later on!</p>
+
+              <cite>Img credit: https://upload.wikimedia.org/wikipedia/commons/6/62/Bras%C3%ADlia_Panor%C3%A2mica.jpg</cite>
+            </div>
           </aside>
         </section>
 
-
-
         <!-- Slide 9 : Challenges due to modularity -->
-        <!-- photo source https://upload.wikimedia.org/wikipedia/commons/a/ac/Lego_dublo_arto_alanenpaa_2.JPG -->
         <section id="challenges" data-background-image="images/lego.jpg">
           <!-- Visible slide content goes here -->
-
           <ul>
             <li>
               New challenges from modularity
@@ -263,29 +268,26 @@
             </li>
           </ul>
 
-
           <aside class="notes">
             <ul>
               <li><strong>New challenges</strong> from <strong>modularity</strong></li>
-              <li>Quote tools for UI</li>
+              <li>Quote tools for UI/UX (<a href="https://medium.freecodecamp.org/the-best-mockup-wireframing-design-tools-apps-for-ui-ux-designers-752edf980486" title="2017 UI/UX">The Best Mockup & Wireframing Design Tools & Apps for UI/UX Designers</a>)</li>
               <li>What is what? Little, the same, naming?</li>
-              <li>Quote styleguides examples</li>
+              <li>Quote styleguides examples ()</li>
             </ul>
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
               <p>Fantastic! Everybody's happy now... <em>right?</em></p>
               <p>Well, yes. <em>But</em>, this modular mindset introduced a new set of challenges:</p>
-              <p>Naming is important</p>
-              <p>How far should we break down our UI components?</p>
-              <p>As we implement the UI components in code, can we showcase them individually?</p>
+              <p>Is naming important? How far should we break down our UI components? <a href="https://medium.freecodecamp.org/design-tools-are-running-out-of-track-94f21b6ae939" title="Design tools are running out of track. Here’s how we can fix them.">What about UI tooling?</a> Can code REALLY match design and vice-versa when out of context? As we implement the UI components in code, can we showcase them individually? Etc.</p>
+
+              <cite>Img credit: https://upload.wikimedia.org/wikipedia/commons/a/ac/Lego_dublo_arto_alanenpaa_2.JPG</cite>
             </div>
           </aside>
         </section>
 
-
         <!-- Slide 10 : Rise of the living style guides -->
-        <section id="patternlab" class="character"  data-background-image="images/patternlab.jpg">
-
+        <section id="patternlab" class="character" data-background-image="images/patternlab.jpg">
           <!-- Visible slide content goes here -->
           <p class="fragment">Atomic Design</p>
           <p class="fragment">Style Guide generators</p>
@@ -293,32 +295,32 @@
           <p class="fragment">Live components</p>
           <p class="fragment">Consistency, Scalability</p>
           <p class="fragment">BEM, OOCCSS, SMACS...</p>
-          <img src="images/brad-toastie.png" class="fragment fade-up invert portrait" alt="Toastie">
+          <img src="images/brad-toastie.png" class="fragment fade-up invert portrait" alt="Brad Toastie">
           <p class="fragment">Naming components, use the same language</p>
           <p class="fragment">Accessibility, contrast (...)</p>
-          <p class="fragment" style="color:rgba(0,0,0,0.5)">Brad Frost, Dave Olsen & Brian Muenzenmeyer</p>
+          <p class="fragment" style="color:rgba(0,0,0,0.5)"><a href="http://bradfrost.com/" title="Brad Frost" style="color:rgba(0,0,0,0.5)">Brad Frost</a>, <a href="http://dmolsen.com/" title="Dave Olsen" style="color:rgba(0,0,0,0.5)">Dave Olsen</a> & <a href="http://www.brianmuenzenmeyer.com/" title="Brian Muenzenmeyer" style="color:rgba(0,0,0,0.5)">Brian Muenzenmeyer</a></p>
           <h3 class="fragment" style="color:rgba(0,0,0,1)">No more hangovers?</h3>
 
-
           <aside class="notes">
-              <p>Once again, our methods and tools needed to evolve.</p>
-              <p>Methodologies like "Atomic Design" gave us a simple vocabulary and mental model that helped us better organise our libraries of UI components.</p>
-              <p>Style guide website generators like Pattern Lab, Fractal and StoryBook arrived on the scene, saving us from manually building and maintaining special websites in order showcase our UI component implementations.</p>
-              <p>By automating their production, these tools have made it easy for style guide websites to always be up-to-date.</p>
+            <p>Once again, our methods and tools needed to evolve.</p>
+            <p><a href="http://atomicdesign.bradfrost.com/" title="Atomic Design by Brad Frost">Methodologies like "Atomic Design"</a> gave us a simple vocabulary and mental model that helped us better organise our libraries of UI components.</p>
+            <p><a href="http://styleguides.io/tools.html" title="Style Guide Ressources">Style guide website generators</a> like ,<a href="http://patternlab.io/" title="Pattern Lab, our favourite don t tell anyone">Pattern Lab</a>, <a href="http://fractal.build/" title="Fractal, we like this one too">Fractal</a> and <a href="https://storybook.js.org/" title="Storybook">StoryBook</a> arrived on the scene, saving us from manually building and maintaining special websites in order showcase our UI component implementations. By automating their production, these tools have made it easy for style guide websites to always be up-to-date.</p>
+            <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
               <p>Since style guide <em>websites</em> contain the <em>actual</em> UI components rather than static design mock-ups, they let everyone involved easily see how the UI components respond to different browsers, devices or content.</p>
               <p>Our style guides had come alive!</p>
               <p>Instead of just improving handovers, we were blurring the boundaries between the various disciplines. Freya, Dave and even Beth could be consumers of and contributors to the living styleguide.</p>
               <p>We began to wonder whether we could make handovers a thing of the past?</p>
+              <ul>
+                Atomic Design/Pattern Lab, <b>¡El trío fantástico!</b>
+                <li><a href="http://dmolsen.com/" title="Dave Olsen">Dave Olsen</a></li>
+                <li><a href="http://www.brianmuenzenmeyer.com/" title="Brian Muenzenmeyer">Brian Muenzenmeyer</a></li>
+                <li><a href="http://bradfrost.com/" title="Brad Frost">Brad Frost</a></li>
+              </ul>
+            </div>
           </aside>
         </section>
 
-
         <!-- Slide 11 : Living style guides continued -->
-        <!--
-          Img credits:
-          https://unsplash.com/search/photos/mountains?photo=zwdlsuRa_xc
-          https://www.flickr.com/photos/tristanf/3034889893/
-        -->
         <section id="hostile-environment" data-background-image="images/beast.jpg">
           <!-- Visible slide content goes here -->
           <img src="images/hero.png" alt="Silhouette of a hero standing on a cliff looking out towards a huge monster on the horizon" class="fragment fade-up">
@@ -326,33 +328,37 @@
           <aside class="notes">
             <ul>
               <li><strong>Living style guides</strong> how to face</li>
-              <li>Design &amp; dev collab critical. UIs need to be:</li>
-              <li>Device-agnostic</li>
-              <li>Inclusive</li>
-              <li>Performant</li>
-              <li>Resilient</li>
+              <li>Design &amp; dev collab critical.</li>
+              <li>UIs and Code need to be:
+                <ul>
+                  <li>Device-agnostic</li>
+                  <li>Inclusive</li>
+                  <li>Performant</li>
+                  <li>Resilient</li>
+                </ul>
+              </li>
               <li><strong>Living style guide are facilitators</strong></li>
             </ul>
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
               <p>Think about it. It should go without saying that a modern web experience, and thus the UI components it is made out of, must be:</p>
               <ul>
-                <li><strong>Device-agnostic</strong>: They need to work well with arbitrary viewport sizes and input mechanisms.</li>
-                <li><strong>Inclusive</strong>: People with all kinds of impairments need to be able to interact with them, potentially with the help of assistive technologies.</li>
-                <li><strong>Performant</strong>: We know that slow page loads and sluggish UI performance will frustrate users. Every part of our UI therefore needs to be as efficient as possible.</li>
-                <li><strong>Resilient</strong>: Our UI components may be populated with unpredictable content from a CMS. Will they cope well with long words, lengthy runs of text or unusually proportioned images? They might not run in ideal conditions either. Do they work without JavaScript? Or offline? Or in IE8?</li>
+                <li><strong><a href="https://www.smashingmagazine.com/2017/02/mobile-first-is-just-not-good-enough-meet-journey-driven-design/" alt="Journey Driven Design - Smashing Magazine">Device-agnostic</a></strong>: They need to work well with arbitrary viewport sizes and input mechanisms.</li>
+                <li><strong><a href="https://tink.uk/" title="Léonie Watson - Tink">Inclusive</a></strong>: People with all kinds of impairments need to be able to interact with them, potentially with the help of assistive technologies.</li>
+                <li><strong><a href="https://blog.kissmetrics.com/speed-is-a-killer/" title="Speed is a killer - Kissmetrics">Performant</a></strong>: We know that slow page loads and sluggish UI performance will frustrate users. Every part of our UI therefore needs to be as efficient as possible.</li>
+                <li><strong><a href="http://futurefriendlyweb.com/" title="Future Friendly">Resilient</a></strong>: Our UI components may be populated with unpredictable content from a CMS. Will they cope well with long words, lengthy runs of text or unusually proportioned images? They might not run in ideal conditions either. Do they work without JavaScript? Or offline? Or in IE8?</li>
               </ul>
               <p>Figuring out how to meet all these criteria has to be a team effort. Dave the designer, Freya the front-end developer and also Ursula from UX will need to put their heads together.</p>
               <p>And yet, a wireframe document or a static visual design can never anticipate or express all the nuances that need to go into the actual implementation. Only code can do that.</p>
               <p>A living style guide can be the means by which developers can demonstrate their work to the other disciplines and get their feedback and input. Changes can be made to the code and previewed almost instantly so the whole team can rapidly iterate the <em>actual</em> UI components until they are done.</p>
-              <p>Basically, <strong>living style guides are <em>the shit</em>!</strong></p>
+              <p>Basically, <strong><a href="https://www.google.co.uk/search?q=living+style+guides" title="Google this, 20M+ results">living style guides are <em>the shit</em>!</a></strong></p>
+
+              <cite>Img credit: https://unsplash.com/search/photos/mountains?photo=zwdlsuRa_xc and https://www.flickr.com/photos/tristanf/3034889893/</cite>
             </div>
           </aside>
         </section>
 
-
         <!-- Slide 12 : Living style guide challenges -->
-        <!-- img credit: https://unsplash.com/search/photos/forest?photo=4dRyVyXN6Lg -->
         <section id="undead-styleguide" data-background-image="images/dark-woods.jpg">
           <img src="images/night-of.png" class="name" alt="Zombie wearing a T-shirt labelled 'Style guide'">
           <img src="images/undead-styleguide.png" class="portrait" alt="Zombie wearing a T-shirt labelled 'Style guide'">
@@ -370,18 +376,19 @@
               <p>Unsurprisingly, crafting well organised, beautiful, living styleguides is rapidly becoming the de-facto way we approach much of our UI work.</p>
               <p>However, our journey does not end there!</p>
               <p>Once you have a living styleguide, a whole slew of new questions inevitably arise...</p>
-              <p>How do we share code between our living style guide and our acutal website?</p>
+              <p>How do we share code between our living style guide and our actual website?</p>
               <p>How do we continually keep design artefacts, living style guides and the website built from them up-to-date and in sync?</p>
               <p>What happens when we need to support more than a single website?</p>
               <p>How do we cope with multiple CMSes and front-end frameworks?</p>
               <p>How do you keep everyone who needs to be involved in the loop?</p>
+
+              <cite>Img credit: https://unsplash.com/search/photos/forest?photo=4dRyVyXN6Lg</cite>
             </div>
           </aside>
         </section>
 
-
         <!-- Slide 13 : Enter the design system -->
-        <section id="" data-background-image="images/old-map.jpg">
+        <section id="castles" data-background-image="images/old-map.jpg">
           <img src="images/castles.png" class="fragment fade-up portrait" alt="Castles">
           <h3 class="fragment">Don't give up, it is tough!</h3>
           <p>Discover, Design, Code, Document, Publish, Organise...</p>
@@ -389,20 +396,22 @@
           <aside class="notes">
             <ul>
               <li>Tough challenges.</li>
-              <li>Don't give up! 6 big blocks, yes we can! Make DS great ag... eeer sorry got carried away, but the idea is NO WALLS!</li>
-              <li>(1) Discover/Research * (2) Design & (3) Build * (  4) Document * (5) Publish</li>
+              <li>Don't give up! 6 big blocks, yes we can! Make DS great aga.. eeer sorry got carried away, but the idea is NO WALLS!</li>
+              <li>(1) Discover/Research * (2) Design & (3) Build * (4) Document * (5) Publish</li>
               <li>Organise the former (6)</li>
             </ul>
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
-              <p>Nathan Curtis Medium post</p>
+              <p><a href="https://medium.com/eightshapes-llc/system-features-step-by-step-e69c90982630" title="Design System Features, Step-by-Step, A Workflow to Design, Build and Document Each Part by Nathan Curtis">Nathan Curtis talks about the 5 steps</a>, we added <em>organise -with a s-</em> as a sixth, because we can :)</p>
               <p>With so many questions and challenges, you could be forgiven for throwing your hands up in despair and running back to PhotoShop's bosom.</p>
-              <p>That's why it's so important to remember how we got here. Modular designs and living style guides <em>are</em> better than what went before. They are solutions to their predecessors' problems.</p>
+              <p>That's why it is so important to remember how we got here. Modular designs and living style guides <em>are</em> better than what went before.<b>They are solutions to their predecessors' problems</b>.</p>
               <p>If you didn't run back to PhotoShop and are instead busy trying to tackle these kinds of challenges, then you have unwittingly begun work on your very own <strong>design system</strong>!</p>
+              <p><a href="https://youtu.be/SzP7B4r0g8o" "Components, Patterns and Sh*t it's hard to deal with - Marco Cedaro">It's tough!</a></p>
+
+              <cite>Img credit: https://commons.wikimedia.org/wiki/File:Old_map-Bastrop-1887.jpg</cite>
             </div>
           </aside>
         </section>
-
 
         <!-- Slide 14: Design systems continued -->
         <section id="ds-morpheus" data-background-image="images/morpheus.jpg">
@@ -416,14 +425,14 @@
               <li>Covers code, designs, docs, tools &amp; people</li>
               <li>Should've been "design eco-system"</li>
             </ul>
-            <p>Hand over to James</p>
+            <p>Hand-over to James (...)</p>
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
               <p>People struggle to explain design systems succinctly because they are not <em>one</em> thing.</p>
-              <p>Depending on your point of view, they might be described the effort to scale up your living style guide to serve an entire organisation.</p>
+              <p>Depending on your point of view, they might be described <a href="https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0" title="Nathan Curtis Medium Post - Team Models for Scaling a Design System">the effort to scale up your living style guide to serve an entire organisation</a>.</p>
               <p>From a business person's perspective, they could be considered the means by which an organisation gets more efficient at delivering consistent, high-quality UIs.</p>
               <p>The marketing team might simply think of them as the replacement for their old brand guidelines PDF.</p>
-              <p>Maybe they are the never-ending struggle to discover the perfect way to make interactive products. And we are all doomed to persue that holy grail for ever and ever!</p>
+              <p>Maybe they are the never-ending struggle to discover the perfect way to make interactive products. And <a href="http://atomicdesign.bradfrost.com/chapter-5/" title="Maintaining Design Systems - Brad Frost">we are all doomed to persue that holy grail for ever and ever</a>!</p>
 
               <p>The one thing everyone does agree on is that design systems must encompass code, designs, documentation, tools and people. Furthermore, they are never "done" - in order to continuously deliver value, they must themselves be maintained continuously.</p>
               <p>Perhaps "design <em>eco</em>-system" would have been a more appropriate name!</p>
@@ -432,7 +441,6 @@
             </div>
           </aside>
         </section>
-
 
         <!-- Slide 15: Design system challenges -->
         <section id="product-not-project">
@@ -447,7 +455,7 @@
 
           <aside class="notes">
             <ul>
-              <li>Product not project</li>
+              <li><a href="https://medium.com/eightshapes-llc/a-design-system-isn-t-a-project-it-s-a-product-serving-products-74dcfffef935" title="Nathan Curtis Medium post">Product not project</a></li>
               <li>Inherently bespoke</li>
               <li>Need support form the org --></li>
               <li>Org change</li>
@@ -456,34 +464,34 @@
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
               <p>Organisations need to think of their design systems as a product. They have no end. They need to continuously adapt, improve and evolve in order to remain useful.</p>
-              <p>This quote from Nathan, who has written tons of useful stuff about design systems, sums up that sentiment nicely.</p>
+              <p>This quote from <a href="https://medium.com/@nathanacurtis" title="Nathan Curtis Medium ressources, the gem amongst gems.">Nathan, who has written tons of useful stuff about design systems, sums up that sentiment nicely</a>.</p>
 
               <p>Design Systems are also inherently bespoke. They will be geared towards supporting and improving <em>your</em> company's processes and needs. The UI libraries will be tailored to your choice of technologies, implement your brand's look and feel and only contain the UI components you need.</p>
-              <p>I her recent book "Design Systems", Alla Kholmatova does a great job of showcasing how broad the spectrum of design systems is.</p>
+              <p><a href="https://www.smashingmagazine.com/design-systems-book/" title="Alla Kholmatova Design System book">In her recent book "Design Systems", Alla Kholmatova</a> does a great job of showcasing how broad the spectrum of design systems is.</p>
               <p>So, while I encourage you to draw inspiration from what others have done, do not make the mistake of assuming you can simply copy their solution.</p>
 
               <p>That in turn leads to the realisation that there needs to be a permanent team, perhaps even a new department, that can tend to and promote the design system. They need to be multi-disciplinary. They need to be funded. And they need to have a plan.</p>
               <p>What began as Freya, David and Beth eliminating frustrations in their work has turned into a monster that will reshape the very organisation they work within!</p>
-              <p>Make no mistake. Establishing a design system is <em>hard</em>.</p>
+              <p><a href="https://airbnb.design/building-a-visual-language/" title="AirBnB Design Language System, the journey">Make no mistake. Establishing a design system is <em>hard</em></a>.</p>
               <p>Really. Fucking. <em>Hard</em>.</p>
-              <p>Many organisations that now have effective design systems in place, only pulled them off after <em>years</em> of trying. Frequently they will have gone through several failed attempts before eventually succeeding.</p>
+              <p><a href="https://fluent.microsoft.com/" title="Fluent Design System from Microsoft">Many organisations that now have effective design systems in place</a>, only pulled them off after <em>years</em> of trying. Frequently they will have gone through several failed attempts before eventually succeeding.</p>
             </div>
           </aside>
         </section>
 
-
         <!-- Slide 16: Things people can do for their design system -->
-        <section data-background-image="images/locked-money.jpg">
+        <section id="things-to-do" data-background-image="images/locked-money.jpg">
 
           <aside class="notes">
             <ul>
               <li>Benefits seem obvious</li>
-              <li>Actual $ value hard to establish though</li>
-              <li>Something boss, PM, UX, marketing, etc. can help with</li>
+              <li><a href="http://v3.danielmall.com/articles/selling-design-systems/" title="Read the outstanding Dan Mall and his post Selling Design Systems">Actual [ $ . £ . € ] value hard to establish though</a></li>
+              <li>Something boss, PM, UX, marketing, etc. can help with.</li>
+              <li>Something you, as a user, get <strong>FOR FREE</strong>.</li>
             </ul>
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
-              <p>Sharing the burden of work and the knowledge acquired from many, individual projects <em>should</em> be a no-brainer. But try calculating the dollar value of that. <em>That</em> is incredibly hard. Consequently, it can be a huge challenge to pursuade Billy the bean counter that setting up a design system will deliver a return on investment.</p>
+              <p>Sharing the burden of work and the knowledge acquired from many, individual projects <em>should</em> be a no-brainer. But try calculating the dollar value of that. <em>That</em> is incredibly hard. Consequently, it can be a <a href="https://uxdesign.cc/selling-a-design-system-at-your-company-74cb2bc97195" title="Selling a Design System at your company - Nick Stamas WeWork">huge challenge to pursuade Billy the bean counter that setting up a design system will deliver a return on investment</a>.</p>
               <p>To all the Beths in the audience: Do <em>you</em> currently measure how much effort is spent across your entire organisation on UI-related work? Can you estimate what might be saved?</p>
               <p>What about Mark from marketing? If you're here Mark, are <em>you</em> able to estimate the monetary value of applying the brand more consistently across products?</p>
               <p>Ursula from UX, can <em>you</em> provide figures for how conversions might increase or user suport costs might drop, if the interface of your various products behaves more consistently?</p>
@@ -492,9 +500,7 @@
           </aside>
         </section>
 
-
         <!-- Slide 17: More things people can do for design systems -->
-        <!-- IMG CREDIT: https://www.flickr.com/photos/sheeppurple/3693959699/ -->
         <section id="web-party" data-background-image="images/web-party.jpg">
           <img src="images/excluded-natives.png" class="fragment fade-left" alt="Android and Apple looking sad">
 
@@ -508,13 +514,14 @@
 
             <div style="margin-top: 3em; border-top: 1px solid #ddd; font-size: 0.7em; color: #aaa;">
               <p>We've seen a lot of great tools emerge that can help the likes of Freya the front-end dev. Tools that make it easy to generate living style guides, update visual design templates, etc. ...when working with <em>web</em> technologies.</p>
-              <p>What about Andy the Android developer though? If you build native apps for non-web platforms, the tooling situation is far less mature. Shouldn't there be native equivalents to Pattern Lab for Android, iOS and Windows? If you're an Andy, this is <em>your</em> chance to get stuck in and build one!</p>
-              <p>How about non-visual UIs? Alexa, Siri and Google Assistant are user interfaces. You probably want your services on them to also provide consistent UI behaviour. Perhaps you also want your company's brand to be recognisable via them. Shouldn't your design system encompass that too? Make it the home for earcons, jingles and tone-of-voice guidelines. Sam the sound designer, if you're here, get involved!</p>
+              <p>What about Andy the Android developer though? If you build native apps for non-web platforms, the tooling situation is far less mature. <a href="https://www.smashingmagazine.com/2015/04/an-in-depth-overview-of-living-style-guide-tools/" title="An In-Depth Overview Of Living Style Guide Tools, By Robert Haritonov">Shouldn't there be native equivalents to Pattern Lab for Android, iOS and Windows? If you're an Andy, this is <em>your</em> chance to get stuck in and build one!</a></p>
+              <p>How about non-visual UIs? Alexa, Siri and Google Assistant are user interfaces. You probably want your services on them to also provide consistent UI behaviour. <a href="https://www.lightningdesignsystem.com/guidelines/voice-and-tone" title="Lightning Design System Voice and Tone - Salesforce">Perhaps you also want your company's brand to be recognisable via them</a>. Shouldn't your design system encompass that too? Make it the home for earcons, jingles and tone-of-voice guidelines. Sam the sound designer, if you're here, get involved!</p>
               <p>There's something here for everyone. We're all still figuring this whole "design system" thing out...</p>
+
+              <cite>Img credit: https://www.flickr.com/photos/sheeppurple/3693959699/</cite>
             </div>
           </aside>
         </section>
-
 
         <!-- Slide 18: To-do -->
         <section id="to-do">
@@ -537,35 +544,149 @@
               </ul>
             </li>
           </ul>
-        </section>
 
+          <aside class="notes">
+            <div style="font-size: 0.6em; color: #aaa;">
+              <ul>
+                <li>
+                  Do your homework / tips are non exhaustive
+                  <ul>
+                    <li>Component inventories / <strong>Tips</strong>
+                      <ul>
+                        <li><a href="http://bradfrost.com/blog/post/interface-inventory/" title="Not a bad place to start">Interface Inventory - Hands on by Brad Frost</a> and</li>
+                        <li><a href="https://medium.com/@marcintreder/design-systems-sprint-1-the-interface-inventory-1f78d376e49a" title="Marcin Treder - Uxpin">Interface Inventory - Marcin Treder</a></li>
+                      </ul>
+                    </li>
+                    <li>Dev team surveys / <strong>Tips</strong>
+                      <ul>
+                        <li><a href="https://github.com/bradfrost/frontend-guidelines-questionnaire" title="Hands on Brad Frost questionnaire">Frontend Guidlines Questionnaire</a> and</li>
+                        <li><a href="https://github.com/kamranahmedse/developer-roadmap" title="Web Dev Roadmap 2017">Web Dev Roadmap 2017</a></li>
+                        <li><a href="https://alistapart.com/article/conducting-the-technical-interview" title="A list APart Conducting the Technical Interview">Conducting the Technical Interview</a></li>
+                      </ul>
+                    </li>
+                    <li>Evaluate tools / <strong>Tips</strong>
+                      <ul>
+                        <li><a href="https://medium.com/eightshapes-llc/measuring-design-system-success-d0513a93dd96" title="Nathan Curtis - Measuring Design System Success">Measuring Design System Success</a> and</li>
+                        <li><a href="http://www.designkit.org/methods" title="Ideo Methods and kits">Design Kit / Ideo</a></li>
+                      </ul>
+                    </li>
+                    <li>Gather stats / <strong>Tips</strong>
+                      <ul>
+                        <li><a href="https://radar.kollegorna.se/" title="Awwwards 2017">Awwwards 2017 Tech Radar</li>
+                        <li><a href="https://www.thoughtworks.com/radar" title="Thoughtworks radar">Thoughtworks Tech Radar</a> and</li>
+                        <li><a href="https://www.jetbrains.com/research/devecosystem-2017/" title="JetBrains The State of Developer Ecosystem in 2017">The State of Developer Ecosystem in 2017</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Start small  / tips are non exhaustive
+                  <ul>
+                    <li>Share colours, fonts, icons, etc.  / <strong>Tips</strong>
+                      <ul>
+                        <li><a href="https://www.lightningdesignsystem.com/components/icons/" title="Salesforce Icons for Lightning Design System">Salesforce Icon component page example</a> and</li>
+                        <li><a href="https://github.com/carbon-design-system/carbon-icons" title="IBM Carbon SVG Icons">IBM Carbon SVG repo</a> and</li>
+                        <li><a href="https://medium.com/eightshapes-llc/color-in-design-systems-a1c80f65fa3" title="Nathan Curtis - Color in Design Systems, 16 Tips for Setting Up a System That Endures">16 Tips for Setting Up a System That Endures</a></li>
+                      </ul>
+                    </li>
+                    <li>Establish naming conventions / <strong>Tips</strong>
+                      <ul>
+                        <li><a href="https://alistapart.com/article/from-pages-to-patterns-an-exercise-for-everyone" title="A list Apart - From Pages to Patterns: An Exercise for Everyone by Charlotte Jackson">From Pages to Patterns: An Exercise for Everyone</a> and</li>
+                        <li><a href="http://trentwalton.com/2016/02/26/atomic-classification/" title="Atomic classification by Trent Walton">Atomic classification</a> and
+                        <li><a href="https://www.smashingmagazine.com/2016/06/battling-bem-extended-edition-common-problems-and-how-to-avoid-them/" title="Battling BEM CSS: 10 Common Problems And How To Avoid Them">BEM tips</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+           </div>
+          </aside>
+        </section>
 
         <!-- Slide 19: To-do 2 -->
         <section id="to-do-2">
-            <h1>Moar To-Do List!</h1>
-            <ul>
-              <li>
-                Communicate
-                <ul>
-                  <li>Write things down</li>
-                  <li>Make things easy to find &amp; access</li>
-                  <li>Set up comms channels</li>
-                  <li>Shout from the rooftops</li>
-                </ul>
-              </li>
-              <li>
-                Join us!
-                <ul>
-                  <li>Design Systems Slack</li>
-                  <li>London meet-ups</li>
-                  <li>Share things!</li>
-                </ul>
-              </li>
-            </ul>
-          </section>
+          <h1>Moar To-Do List!</h1>
+          <ul>
+            <li>
+              Communicate
+              <ul>
+                <li>Write things down</li>
+                <li>Make things easy to find &amp; access</li>
+                <li>Set up comms channels</li>
+              </ul>
+            </li>
+            <li>
+              Join us!
+              <ul>
+                <li>Design Systems Slack</li>
+                <li>London meet-ups</li>
+                <li>Share things!</li>
+              </ul>
+            </li>
+          </ul>
 
+          <aside class="notes">
+            <div style="font-size: 0.6em; color: #aaa;">
+              <ul>
+                <li>
+                  Communicate / tips are non exhaustive
+                  <ul>
+                    <li>Write things down / <strong>Tips</strong>
+                      <ul>
+                        <li><a href="https://medium.com/eightshapes-llc/design-system-doc-components-8c0b027322f8" title="Nathan Curtis - Design System Doc Components, The Top 8 Reusable Components to Document a Library">The Top 8 Reusable Components to Document a Library</a> and</li>
+                        <li><a href="https://dribbble.com/shots/3239960-Design-system-documentation" title="Design system documentation by Andrew Couldwell">Design system documentation - Andrew Couldwell</a> and
+                        <li><a href="http://designguidelines.co/" title="Design Guidelines. The way products are built.">Design Guidelines. The way products are built.</a></li>
+                      </ul>
+                    </li>
+                    <li>Make things easy to find &amp; access / <strong>Tips</strong>
+                      <ul>
+                        <li><a href="https://clearleft.com/posts/475" title="Design systems do not start with components by Clearleft">Design systems don’t start with components by Clearleft</a> and</li>
+                        <li><a href="https://books.google.co.uk/books?id=dwIillDgaDwC&lpg=PA1&pg=PA1#v=onepage&q&f=false" title="Modular Web Design Book by Nathan Curtis">Modular Web Design</a></li>
+                      </ul>
+                    </li>
+                    <li>Set up comms channels / <strong>Tips</strong>
+                      <ul>
+                        <li>Use <del>Email</del>, Slack, Messenger, Whatsapp, Kik, Wechat, Skype, Hangouts, Twitter, Telegram, whatever social media suits you. Even Snapchat and Instagram for the very brave.</li>
+                      </ul>
+                    </li>
+                    <li>Shout from the rooftops / <strong>Tips</strong>
+                      <ul>
+                        <li>Explain to as many people as possible what it is.</li>
+                        <li>Look at their faces, understand why they do not understand.</li>
+                        <li>Do not quit, repeat, refine, iterate.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Join us! (tips are non exhaustive :)
+                  <ul>
+                    <li>Design Systems Slack / <strong>Tips</strong>
+                      <ul>
+                        <li><a href="http://designsystems.herokuapp.com/" title="Join the Design Systems on Slack! by Jina, circa 4000 people in there">Design System Slack Channel</a></li>
+                        <li><a href="https://designsystems.curated.co/" title="Design Systems curated link list newsletter">Design Systems Curated.co</a></li>
+                      </ul>
+                    </li>
+                    <li>London meet-ups / <strong>Tips</strong>
+                      <ul>
+                        <li>Look for the London channel in the Design System Slack</li>
+                      </ul>
+                    </li>
+                    <li>Share things! / <strong>Tips</strong>
+                      <ul>
+                        <li><a href="https://medium.com/search?q=Design%20Systems" title="Medium Design System tag">Medium Design System tag</a></li>
+                        <li><a href="https://twitter.com/search?vertical=default&q=%23designsystems&src=typd" title="Twitter Design System search">Twitter Design System tag</a></li>
+                        <li><a href="https://github.com/search?utf8=%E2%9C%93&q=design+systems&type=" title="All things in the Open">Github Design System tag</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        </section>
 
-        <!-- Slide 19: Final slide -->
+        <!-- Slide 20: Final slide -->
         <section id="ask-not" data-background-image="images/collage.jpg">
           <blockquote>
             <p>And so, my fellow webmasters:</p>
