@@ -33,3 +33,9 @@ This will do the following:
 1. Start a local webserver (using [Browsersync](https://www.browsersync.io/))
 1. Start watching the source HTML & SASS files
     * Whenever those source files are changed, they will be rebuilt and reload in the browser
+    
+## See it online
+
+https://buildit.github.io/online-ask-design-system/
+
+Navigate the presentation with the key arrows ( left - right ). For complete speaker notes window hit 's' on your keyboard while navigating.
