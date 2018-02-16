@@ -213,6 +213,24 @@
     }
   }
 
+  #challenges {
+    h2,
+    li {
+      text-shadow: 0 0.05em 0.8em rgba(0,0,0,0.9);
+    }
+
+    li {
+      font-size: $heading3Size;
+      margin-top: 0.5em;
+      color: #ddd;
+
+      strong {
+        color: #fff;
+      }
+    }
+  }
+
+
   #patternlab {
     width: 100%;
     text-align: left;
@@ -332,7 +350,6 @@
 
   }
 
-  #challenges,
   #to-do,
   #to-do-2 {
     box-sizing: border-box;
@@ -359,24 +376,6 @@
 
       li {
         margin-top: 0.5em;
-      }
-    }
-  }
-
-  #challenges {
-
-    > ul {
-
-      > li {
-        font-size: $heading3Size/1.5;
-      }
-    }
-
-
-    li ul {
-      font-size: $mainFontSize/1.5;
-      li {
-        margin-top: 1em;
       }
     }
   }
