@@ -71,17 +71,21 @@
     }
 
     p {
-      float: left;
+      text-align: center;
+      color: rgba(255,255,255,0.4);
+
+      padding-bottom: 1em;
+      border-bottom: 1px solid rgba(255,255,255,0.4);
     }
 
     img {
       float: right;
-      border-left: 1px solid #aaa;
-      padding: 0.8em 0 0.8em 1.6em;
+      padding: 0 0 0.8em 1.6em;
       width: 32%;
     }
 
     .presenter {
+      color: #fff;
       display: inline-block;
       vertical-align: middle;
       text-align: center;
@@ -215,18 +219,23 @@
 
   #challenges {
     h2,
-    li {
+    li,
+    p {
       text-shadow: 0 0.05em 0.8em rgba(0,0,0,0.9);
     }
 
     li {
-      font-size: $heading3Size;
       margin-top: 0.5em;
-      color: #ddd;
+      list-style-type: none;
+    }
 
-      strong {
-        color: #fff;
-      }
+    ul {
+      width: 40%;
+    }
+
+    p {
+      width: 70%;
+      text-align: right;
     }
   }
 
