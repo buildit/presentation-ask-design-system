@@ -231,21 +231,32 @@
   }
 
 
-  #patternlab {
+  #atomic-design {
     width: 100%;
-    text-align: left;
 
-    p {
-        font-size: $heading3Size/2;
+    .atomic {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
     }
+
     .portrait {
       // Make the portrait image overflow the slide
       position: absolute;
-      top: 45%;
-      right: 2%;
-      max-height: 50%;
-      transform: rotate(-25deg);
+      top: 40%;
+      right: -6%;
+      max-height: 70%;
     }
+
+    .fragment.fade-left {
+      transform: translate(200%, 100%) rotate(-40deg);
+
+      &.visible {
+        transform: translate(0, 0) rotate(-40deg);
+      }
+    }
+
   }
 
   #hostile-environment {
